@@ -1,5 +1,5 @@
 # AIvsHuman
-AI vs Human song classifier
+AI vs Human song classifier. The idea is to use cpu rather than gpu.
 
 ## install prerequisites
 
