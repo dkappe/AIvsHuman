@@ -45,6 +45,18 @@ Running against 1075 AI songs yields
 1054/1075 = 98% correct
 ```
 
+Running against 1163 spotify AI songs yields
+
+```
+878/1163 = 75.5% correct
+```
+
+The latest net on spotify AI songs yields
+
+```
+1020/1163 = 87.7% correct
+```
+
 ## Usage
 
 If you want to detect an artist that uses AI, put several albums worth of mp3's in a directory and run the above classifiers.
