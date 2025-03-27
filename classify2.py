@@ -114,7 +114,7 @@ if __name__ == "__main__":
     class Args:
         pass
     args = Args()
-    args.checkpoint = "model/cr2nn1-43.ckpt"  # Replace with your checkpoint path
+    args.checkpoint = "model/cr2nn2-45.ckpt"  # Replace with your checkpoint path
 
     if len(sys.argv) < 2:
         print("Usage: python script.py <directory>")
