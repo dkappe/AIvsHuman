@@ -3,9 +3,7 @@ import librosa
 import librosa.display
 import numpy as np
 import argparse
-import pytorch_lightning as pl
 import torch.nn as nn
-from pytorch_lightning import LightningModule
 import glob
 import sys
 
@@ -19,7 +17,7 @@ def load_audio_with_skip(file_path, sr=22050, skip_seconds=10, min_remaining=35)
     return audio, sr
 
 # ---- CR2NN Model ----
-class CR2NNModel(pl.LightningModule):
+class CR2NNModel(nn.Module):
     def __init__(self, num_classes=2, lr=1e-3):
         super(CR2NNModel, self).__init__()
         self.lr = lr
@@ -114,7 +112,6 @@ if __name__ == "__main__":
     class Args:
         pass
     args = Args()
-    args.checkpoint = "model/cr2nn2-45.ckpt"  # Replace with your checkpoint path
 
     if len(sys.argv) < 2:
         print("Usage: python script.py <directory>")
