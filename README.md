@@ -1,6 +1,10 @@
 # AIvsHuman
 AI vs Human song classifier. The idea is to use cpu rather than gpu.
 
+## Hugging Face space
+
+https://huggingface.co/spaces/dkappe/AISong
+
 ## install prerequisites
 
 `pip install torch librosa matplotlib`
